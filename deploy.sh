@@ -4,6 +4,7 @@
 set -e
 
 # 删除 dist 目录
+rm -rf dist
 
 # 构建
 npm run build
