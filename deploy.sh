@@ -3,6 +3,8 @@
 # 当发生错误时中止脚本
 set -e
 
+# 删除 dist 目录
+
 # 构建
 npm run build
 
@@ -20,6 +22,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:daluozha/PAPERCRAFT.git main:gh-pages
+git push -f git@github.com:daluozha/gh-pages-template.git main:gh-pages
 
 cd -
